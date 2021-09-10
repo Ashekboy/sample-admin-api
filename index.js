@@ -34,7 +34,7 @@ app.use('/api/books',booksRoute);
 
 //connect to mongodb atlas
 mongoose
-  .connect(process.env.MONGO_URL, { useNewUrlParser: true })
+  .connect('mongodb+srv://sample:Olamipo2@cluster0.8hxjx.mongodb.net/sample-admin?retryWrites=true&w=majority', { useNewUrlParser: true })
   .then(() => {
     logger.info("connected to mongoDb atlas");
   })
